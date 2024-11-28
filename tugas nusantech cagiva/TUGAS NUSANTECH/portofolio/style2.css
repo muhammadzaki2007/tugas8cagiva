@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(245, 199, 239);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #b58bbe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 30px;
+    color: rgb(83, 41, 92);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 15px;
+    color: rgb(88, 31, 105);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: rgb(168, 117, 211);
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(109, 95, 158);
+}
+
+.home-content p{
+    font-size: 17px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    height: 37px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(177, 124, 221);
+    border: 2px solid rgb(143, 59, 211);
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(90, 6, 116);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: rgb(98, 77, 173);
+}
+
+.btn-box a:nth-child(2):hover{
+    color: black;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: #a1a2d3;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #485f5b;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+ 
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(76, 4, 94);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(59, 7, 83);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: rgb(176, 123, 211);
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #d7a9f1;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
+.img{
+    height: 390px;
+    position: absolute;
+    bottom: 85px;
+    left: 83%;
+    transform: translateX(-70%);
+    border-radius: 50%;
+}
+
+.services{
+    background: rgb(245, 199, 239);
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: rgb(182, 128, 233);
+    font-size: 35px;
+    width: 1130px;
+    margin: 17px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height: 365px;
+    width: 365px;
+    padding: 20px 35px;
+    background: #b99ee2;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(86, 76, 124);
+}
+
+h5{
+    color: rgb(92, 29, 89);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.pra p{
+    color: rgb(83, 14, 97);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button{
+    background-color: rgb(88, 27, 138);
+    color: rgb(201, 151, 241);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 6px 19px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(214, 191, 235);
+    cursor: pointer;
+}

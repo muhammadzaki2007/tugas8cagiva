@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7d0db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signboard {
+    background-color: #ffebaf;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+    text-align: center;
+    color: #3c3a8e;
+}
+
+.top-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 5px;
+    color: #3c3a8e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-text {
+    margin-top: 10px;
+}
+
+.main-text span {
+    display: block;
+    font-size: 1.2em;
+    color: #bb69aa;
+}
+
+.main-text h1 {
+    font-size: 4em;
+    color: #3c3a8e;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Brush Script MT', cursive;
+}
+
+.year {
+    font-size: 1.5em;
+    color: #bb69aa;
+    margin-top: 10px;
+}
+
+.signboard::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: -50px;
+    width: 20px;
+    height: 150px;
+    background-color: #e499bd;
+}
+
+.signboard::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -50px;
+    width: 20px;
+    height: 150px;
+    background-color: #e499bd;
+}
+
